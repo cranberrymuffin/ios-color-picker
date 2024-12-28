@@ -25,6 +25,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         updateColor()
         hexCodeTextField.isUserInteractionEnabled = false
+        colorView.layer.borderWidth = 5
+        colorView.layer.borderColor = UIColor.black.cgColor
     }
     @IBAction func reset(_ sender: UIButton) {
         redSwitch.isOn = true
